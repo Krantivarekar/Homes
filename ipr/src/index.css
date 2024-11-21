@@ -1,0 +1,59 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+   background-color: #f4f4f9; /*Light background */
+}
+
+h1, h2 {
+  color: #2E1E77; /* Primary theme color */
+}
+
+p, ul, ol {
+  margin: 10px 0;
+  color: #333; /* Darker text for readability */
+}
+
+header {
+  background-color: #ffffff; /* Primary theme */
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+footer {
+  background-color: #0854f880; /* Primary theme */
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+/* #f2eefb */
+section:nth-child(even) {
+  background-color: #ececec; /* Light shade of the primary theme */
+}
+
+section:nth-child(odd) {
+  background-color: #f9f8fd; /* Slightly lighter */
+}
+
+button {
+  background-color: #2E1E77;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #472ca4; /* Darker variant of primary theme */
+}
