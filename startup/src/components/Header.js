@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header style={styles.header}>
-      <h1>Research in India</h1>
+      <h1>Startups in Gujrat</h1>
       <div style={styles.buttonContainer}>
         <button style={styles.button}>Sign In</button>
         <button style={styles.button}>Register</button>

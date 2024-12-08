@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 // Importing images from the assets folder
-import moneyIcon from "../assets/images/investment.png";
-import planIcon from "../assets/images/team.png";
-import researchIcon from "../assets/images/implement.png";
-import governanceIcon from "../assets/images/government.png";
-import worldIcon from "../assets/images/real-time.png";
+
+import eligibility from "../assets/images/steps/competence.png";
+import legal from "../assets/images/steps/legal.png";
+import incorporation from "../assets/images/steps/system-integration.png";
+import regestration from "../assets/images/steps/registration.png";
+import operationalsetup from "../assets/images/steps/integration.png";
 import arrowIcon from "../assets/images/right.png";
+
 
 const ResearchProcess = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -14,11 +16,11 @@ const ResearchProcess = () => {
   const handleMouseLeave = () => setHoveredIndex(null);
 
   const icons = [
-    { src: moneyIcon, alt: "Money", text: "Funding" },
-    { src: planIcon, alt: "Plan", text: "Collaborations" },
-    { src: researchIcon, alt: "Research", text: "Implementation" },
-    { src: governanceIcon, alt: "Governance", text: "Government Support" },
-    { src: worldIcon, alt: "World", text: "Delivery" },
+    { src: eligibility, alt: "Money", text: "Funding" },
+    { src: legal, alt: "Plan", text: "Collaborations" },
+    { src: incorporation, alt: "Research", text: "Implementation" },
+    { src: regestration, alt: "Governance", text: "Government Support" },
+    { src: operationalsetup, alt: "World", text: "Delivery" },
   ];
 
   const descriptions = [
@@ -131,11 +133,11 @@ const styles = {
   text: {
     marginTop: "8px",
     fontSize: "1vw",
-    fontWeight: "bold",
+    // fontWeight: "bold",
     color: "black",
   },
   arrow: {
-    width: "4vw",
+    width: "3vw",
     height: "auto",
     position: "absolute",
   },

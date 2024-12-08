@@ -7,7 +7,7 @@ import ProjectStats from "./components/ProjectStats";  // Import Project Stats s
 import ResearchProcess from "./components/ResearchProcess";  // Import Research Process section
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import RisingResearchProjects from "./components/Collaborators";
+import IPRTrends from "./components/IPRTrends";
 const App = () => {
   return (
     <div>
@@ -17,7 +17,7 @@ const App = () => {
       <ProjectStats />
       <WhyWe />  
       <NewsUpdates /> 
-      <RisingResearchProjects/>
+      <IPRTrends/>
       <AboutUs />  
       <Footer/>
     </div>

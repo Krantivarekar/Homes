@@ -148,7 +148,8 @@ const styles = {
     backgroundColor: 'rgba(255, 255, 255, 0.7)',  // 80% opacity
     borderRadius:"5px",
     position: "relative",
-    
+    borderRight: '2px solid #ccc',
+    boxShadow: "0 0px 8px rgba(0, 0, 0, 0.2)",
   },
   title: {
     fontSize: "36px",

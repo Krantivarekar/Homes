@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 // Importing images from the assets folder
-import moneyIcon from "../assets/images/investment.png";
-import planIcon from "../assets/images/team.png";
-import researchIcon from "../assets/images/implement.png";
-import governanceIcon from "../assets/images/government.png";
-import worldIcon from "../assets/images/real-time.png";
-import arrowIcon from "../assets/images/right.png";
+
+import search from "../assets/images/steps/head-hunting.png";
+import verify from "../assets/images/steps/verification.png";
+import examine from "../assets/images/steps/examine.png";
+import publication from "../assets/images/steps/publication.png";
+import grant from "../assets/images/steps/approved.png";
+import arrowIcon from "../assets/images/steps/right.png";
+
 
 const ResearchProcess = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -14,19 +16,19 @@ const ResearchProcess = () => {
   const handleMouseLeave = () => setHoveredIndex(null);
 
   const icons = [
-    { src: moneyIcon, alt: "Money", text: "Funding" },
-    { src: planIcon, alt: "Plan", text: "Collaborations" },
-    { src: researchIcon, alt: "Research", text: "Implementation" },
-    { src: governanceIcon, alt: "Governance", text: "Government Support" },
-    { src: worldIcon, alt: "World", text: "Delivery" },
+    { src: search, alt: "Money", text: "Search & Identify" },
+    { src: verify, alt: "Plan", text: "Prepare & File" },
+    { src: examine, alt: "Research", text: "Examine" },
+    { src: publication, alt: "Governance", text: "Publication & Opposition" },
+    { src: grant, alt: "World", text: "Grant & Renewal" },
   ];
 
   const descriptions = [
-    "Securing financial resources to support research and development efforts.",
-    "Collaborating with partners to combine expertise and resources for innovation.",
-    "Turning research findings into practical solutions and real-world applications.",
-    "Receiving grants and policies from govt. to advance research.",
-    "Ensuring successful distribution/execution of research outcomes or products."
+    "Determine appropriate IPR category and conduct a search for prior rights",
+    "Prepare an application and file it by paying applicable fees.",
+    "The authority reviews application for compliance and possible objections.",
+    "Application is made public, and third parties can raise objections.",
+    "Upon approval, IPR is granted, and periodic renewals maintain the rights."
   ];
 
   const positions = [
@@ -46,7 +48,7 @@ const ResearchProcess = () => {
 
   return (
     <section id="milestones">
-      <h1 style={{ textAlign: "center", fontSize: "36px" }}>Milestones in Research</h1>
+      <h1 style={{ textAlign: "center", fontSize: "36px" }}>Milestones in IPR management</h1>
       <div style={styles.container}>
         {icons.map((icon, index) => (
           <React.Fragment key={index}>
@@ -130,12 +132,11 @@ const styles = {
   },
   text: {
     marginTop: "8px",
-    fontSize: "1vw",
-    fontWeight: "bold",
+    fontSize: "0.8vw",
     color: "black",
   },
   arrow: {
-    width: "4vw",
+    width: "3vw",
     height: "auto",
     position: "absolute",
   },

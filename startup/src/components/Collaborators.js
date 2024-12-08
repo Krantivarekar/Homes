@@ -26,7 +26,7 @@ const RisingResearchProjects = () => {
 
   return (
     <section id="" className="research-section">
-      <h1 className="section-title">Rising Research Projects in Gujarat</h1>
+      <h1 className="section-title">Rising Startups in Gujarat</h1>
       <div className="projects-container">
         {researchProjects.map((project, index) => (
           <div key={index} className="project-card">

@@ -41,7 +41,7 @@ const Navbar = () => {
             href="#milestones"
             style={styles.link}
             >
-            Milestones of Research
+            Milestones of Startups
           </a>
         </li>
         <li>
@@ -73,7 +73,7 @@ const Navbar = () => {
             href="#research-projects"
             style={styles.link}  
           >
-            Rising Research Projects in Gujarat
+            Rising Startup Projects in Gujarat
           </a>
         </li>
         <li>

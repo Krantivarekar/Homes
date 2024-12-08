@@ -44,25 +44,25 @@ const CounterSection = () => {
         <h2 style={styles.counterValue}>
           234+<span style={styles.counterSpan}></span>
         </h2>
-        <p style={styles.counterLabel}>Fundraisers</p>
+        <p style={styles.counterLabel}>Granted</p>
       </div>
       <div style={styles.counterItem}>
         <h2 style={styles.counterValue}>
           56+<span style={styles.counterSpan}></span>
         </h2>
-        <p style={styles.counterLabel}>Raised</p>
+        <p style={styles.counterLabel}>Filed</p>
       </div>
       <div style={styles.counterItem}>
         <h2 style={styles.counterValue}>
-          234k+<span style={styles.counterSpan}></span>
+          234+<span style={styles.counterSpan}></span>
         </h2>
-        <p style={styles.counterLabel}>Donations</p>
+        <p style={styles.counterLabel}>Verified</p>
       </div>
       <div style={styles.counterItem}>
         <h2 style={styles.counterValue}>
-          160,527+<span style={styles.counterSpan}></span>
+          160+<span style={styles.counterSpan}></span>
         </h2>
-        <p style={styles.counterLabel}>Volunteers</p>
+        <p style={styles.counterLabel}>Refiled</p>
       </div>
     </div>
     </section>
