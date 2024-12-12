@@ -1,28 +1,33 @@
-import React from "react";
-import Navbar from "./components/Navbar";  // Import Navbar component
-import AboutUs from "./components/AboutUs";  // Import About Us section
-import WhyWe from "./components/WhyWe";  // Import Why We section
-import NewsUpdates from "./components/NewsUpdates";  // Import News and Updates section
-import ProjectStats from "./components/ProjectStats";  // Import Project Stats section
-import ResearchProcess from "./components/ResearchProcess";  // Import Research Process section
+import React, { useState } from "react";
+import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import RisingResearchProjects from "./components/Collaborators";
+import NavigationPanel from "./components/NavigationPanel";
+import Initiation from "./components/initiation";
+import Planning from "./components/Planning";
+import Execution from "./components/Execution";
+import Monitoring from "./components/Monitoring";
+import Closing from "./components/Closing";
+import Timeline from "./components/Timeline";
+import { Routes, Route} from 'react-router-dom';
+
+
 const App = () => {
   return (
-    <div>
-      <Header/>
-      <Navbar />  
-      <ResearchProcess/>
-      <ProjectStats />
-      <WhyWe />  
-      <NewsUpdates /> 
-      <RisingResearchProjects/>
-      <AboutUs />  
-      <Footer/>
-    </div>
+    <>
+    <Navbar />
+    <Header />
+    <Routes>
+      <Route path="/" element={<Timeline />} />
+      <Route path="/initiation" element={<Initiation />} />
+      <Route path="/planning" element={<Planning />} />
+      <Route path="/execution" element={<Execution />} />
+      <Route path="/monitoring" element={<Monitoring />} />
+      <Route path="/closing" element={<Closing />} />
+    </Routes>
+    <Footer />
+  </>
   );
 };
-
 
 export default App;

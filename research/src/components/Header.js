@@ -5,8 +5,10 @@ const Header = () => {
     <header style={styles.header}>
       <h1>Research in India</h1>
       <div style={styles.buttonContainer}>
-        <button style={styles.button}>Sign In</button>
-        <button style={styles.button}>Register</button>
+        <button style={styles.button}>Explore</button>
+        <button style={styles.button}>Issues</button>
+        <button style={styles.button}>Policy</button>
+
       </div>
     </header>
   );

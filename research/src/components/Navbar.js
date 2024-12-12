@@ -38,7 +38,7 @@ const Navbar = () => {
       <ul style={styles.navLinks}>
         <li>
           <a
-            href="#milestones"
+            href="/1"
             style={styles.link}
             >
             Milestones of Research
