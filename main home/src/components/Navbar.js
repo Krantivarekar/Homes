@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for React Router
 
 const Navbar = () => {
   const styles = {
@@ -14,7 +15,7 @@ const Navbar = () => {
       listStyle: "none",
       display: "flex",
       justifyContent: "center",
-      gap: "105px",
+      gap: "50px", // Adjusted for better spacing
       margin: 0,
       padding: 0,
     },
@@ -27,70 +28,35 @@ const Navbar = () => {
       borderRadius: "5px",
       transition: "all 0.3s ease",
     },
-    linkHover: {
-      backgroundColor: "#4A2EB8", // Lighter purple
-      color: "#f4f4f4",
-    },
   };
 
   return (
     <nav style={styles.navbar}>
       <ul style={styles.navLinks}>
+        {/* Page navigation links */}
         <li>
-          <a
-            href="#milestones"
-            style={styles.link}
-            >
-            Milestones of Research
-          </a>
+          <Link to="/" style={styles.link}>Home</Link>
+        </li>
+      
+        <li>
+          <Link to="/why-we" style={styles.link}>Why We</Link>
         </li>
         <li>
-          <a
-            href="#our-progress"
-            style={styles.link} 
-          >
-            Our Progress
-          </a>
+          <Link to="/updates-news" style={styles.link}>Recent Updates and News</Link>
         </li>
         <li>
-          <a
-            href="#whywe"
-            style={styles.link} 
-          >
-            Why We
-          </a>
+          <Link to="/research-projects" style={styles.link}>Rising Research Projects</Link>
         </li>
         <li>
-          <a
-            href="#updates-news"
-            style={styles.link} 
-          >
-            Recent Updates and News
-          </a>
+          <Link to="/schemes" style={styles.link}>Schemes</Link>
+        </li>
+        {/* Anchor links for in-page navigation */}
+        
+        <li>
+          <a href="/about-us" style={styles.link}>About Us</a>
         </li>
         <li>
-          <a
-            href="#research-projects"
-            style={styles.link}  
-          >
-            Rising Research Projects in Gujarat
-          </a>
-        </li>
-        <li>
-          <a
-            href="#about-us"
-            style={styles.link}
-          >
-            About Us
-          </a>
-        </li>
-        <li>
-          <a
-            href="#contact-us"
-            style={styles.link}
-            >
-            Contact Us
-          </a>
+          <a href="/contact-us" style={styles.link}>Contact Us</a>
         </li>
       </ul>
     </nav>

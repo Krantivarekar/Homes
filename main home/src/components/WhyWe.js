@@ -1,50 +1,44 @@
-import { height } from "@fortawesome/free-solid-svg-icons/fa0";
 import React from "react";
-
-
+import { Link } from "react-router-dom";
 import icon1 from '../assets/images/only logo.svg';
 
-
-
 const WhyWe = () => {
-  // const icon=[
-  //   icon1,icon2,icon3,
-  // ]
   const cards = [
     {
-      icon: icon1, // Placeholder image URL
+      icon: icon1,
       title: "StartUps",
-      description:
-        "A startup must meet certain criteria to be considered eligible for DPIIT Recognition.",
+      description: "A startup must meet certain criteria to be considered eligible for DPIIT Recognition.",
       buttonText: "Know more",
+      route: "/startups", // Add the route path for this card
     },
     {
-      icon:icon1, // Placeholder image URL
+      icon: icon1,
       title: "Research",
-      description:
-        "Click here to know more about the recognition process and apply as a Startup.",
+      description: "Click here to know more about the recognition process and apply as a Startup.",
       buttonText: "Know more",
+      route: "/research", // Add the route path for this card
     },
     {
-      icon: icon1, // Placeholder image URL
+      icon: icon1,
       title: "IPR trends",
-      description:
-        "Click here to know more about the recognition process and apply as a Startup.",
+      description: "Click here to know more about the recognition process and apply as a Startup.",
       buttonText: "Know more",
+      route: "/ipr-trends", // Add the route path for this card
     },
   ];
 
   return (
     <section id="whywe">
       <div style={styles.container}>
-        
         <div style={styles.cardContainer}>
           {cards.map((card, index) => (
             <div key={index} style={styles.card}>
               <img src={card.icon} alt={card.title} style={styles.icon} />
               <h3 style={styles.cardTitle}>{card.title}</h3>
               <p style={styles.cardDescription}>{card.description}</p>
-              <button style={styles.button}>{card.buttonText}</button>
+              <Link to={card.route}>
+                <button style={styles.button}>{card.buttonText}</button>
+              </Link>
             </div>
           ))}
         </div>
@@ -58,15 +52,14 @@ const styles = {
     width: "100%",
     textAlign: "center",
     padding: "10px 10px",
-    boxShadow:"none",
-    // backgroundColor: "rgba(255, 255, 255, 0.8)", // 80% opacity
+    boxShadow: "none",
   },
   cardContainer: {
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
     gap: "100px",
-    flexWrap: "wrap", // Ensures responsiveness
+    flexWrap: "wrap",
   },
   card: {
     backgroundColor: "rgba(255, 255, 255, 0.8)",
@@ -75,8 +68,8 @@ const styles = {
     padding: "20px",
     textAlign: "center",
     maxWidth: "350px",
-    height:"auto",
-    flex: "1 1 55%", // Adjusts card width for responsiveness
+    height: "auto",
+    flex: "1 1 55%",
   },
   icon: {
     width: "150px",

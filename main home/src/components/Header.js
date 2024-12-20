@@ -1,13 +1,18 @@
 import React from 'react';
-import Logo from '../assets/images/sus logo.svg'; // Adjust the path as per your project structure.
+import Logo from '../assets/images/sus logo.svg';
+import { Link } from 'react-router-dom';  // Adjust the path as per your project structure.
 
 const Header = () => {
   return (
     <header style={styles.header}>
       <img src={Logo} alt="StartUpSphere Logo" style={styles.logo} />
       <div style={styles.buttonContainer}>
-        <button style={styles.button}>Sign In</button>
-        <button style={styles.button}>Register</button>
+        <Link to="/signin" style={{ textDecoration: 'none' }}>
+          <button style={styles.button}>Sign In</button>
+        </Link>
+        <Link href="/register" style={{ textDecoration: 'none' }}>
+          <button style={styles.button}>Register</button>
+        </Link>
       </div>
     </header>
   );
